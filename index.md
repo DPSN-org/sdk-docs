@@ -28,7 +28,8 @@ DPSN leverages your existing EVM wallet  for secure authentication, but **only**
 ## Available SDKs
 
 <div class="sdk-grid">
-<a href="/docs/nodejs" class="sdk-card">
+<a href="{{site.baseurl}}/docs/nodejs/" class="sdk-card">
 <h4>Node.js</h4>
 </a>
-</div> 
+</div>
+
