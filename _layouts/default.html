@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}DPSN SDK Documentation</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    <div class="container">
+        {% include nav.html %}
+        
+        <main class="doc-content">
+            <article>
+                {{ content }}
+            </article>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parent = toggle.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html> 

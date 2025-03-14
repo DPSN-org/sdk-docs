@@ -1,0 +1,12 @@
+<nav class="doc-nav">
+    <h3>Documentation</h3>
+    <ul class="nav-menu">
+        <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Overview</a></li>
+        <li class="has-dropdown">
+            <a href="#" class="dropdown-toggle">SDK ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="/docs/nodejs" {% if page.url contains "/docs/nodejs" %}class="active"{% endif %}>Node.js</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav> 
