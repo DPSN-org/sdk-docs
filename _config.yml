@@ -1,7 +1,7 @@
 title: DPSN Client SDK Documentation
 description: Documentation for the DPSN Node.js Client SDK
 baseurl: ""
-url: "https://dpsn-org.github.io/gitbook"
+url: "https://dpsn-org.github.io/sdk-docs"
 
 # Build settings
 markdown: kramdown
@@ -50,5 +50,5 @@ defaults:
 
 # GitHub Pages specific settings
 github:
-  repository: dpns-org/gitbook
+  repository: dpns-org/sdk-docs
   branch: main 
