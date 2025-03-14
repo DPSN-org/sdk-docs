@@ -1,7 +1,7 @@
 title: DPSN Client SDK Documentation
 description: Documentation for the DPSN Node.js Client SDK
 baseurl: ""
-url: "http://localhost:4000"
+url: "https://dpsn-org.github.io/sdk-docs"
 
 # Build settings
 markdown: kramdown
