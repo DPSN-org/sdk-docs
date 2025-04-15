@@ -12,3 +12,4 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-relative-links"
 end 
+gem "jekyll-theme-primer", "~> 0.6.0"

@@ -1,12 +1,17 @@
 <nav class="doc-nav">
     <h3>Documentation</h3>
     <ul class="nav-menu">
-        <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Overview</a></li>
+        <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
         <li class="has-dropdown">
             <a href="#" class="dropdown-toggle">SDK ▾</a>
-            <ul class="dropdown-menu">
-                <li><a href="{{site.baseurl}}/docs/nodejs/" {% if page.url contains "/docs/nodejs" %}class="active"{% endif %}>Node.js</a></li>
-            </ul>
+                <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-toggle">Node.js ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{site.baseurl}}/docs/nodejs/overview" {% if page.url contains "/docs/nodejs/overview" %}class="active"{% endif %}>Overview</a></li>
+                        <li><a href="{{site.baseurl}}/docs/nodejs/subscribe-to-a-topic" {% if page.url contains "/docs/nodejs/subscribe-to-a-topic" %}class="active"{% endif %}>Subscribe to a topic</a></li>
+                    </ul>
+                </li>
+                </ul>
         </li>
     </ul>
 </nav> 

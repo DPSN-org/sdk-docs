@@ -6,14 +6,14 @@
 }
 
 :root {
-    --primary-color: #0066cc;
-    --secondary-color: #00b4ff;
-    --background-color: #121212;
-    --text-color: #e0e0e0;
-    --border-color: #333;
-    --code-background: #1e1e1e;
-    --link-color: #00ff9d;
-    --hover-color: #00b4ff;
+    --primary-color: #0366d6;
+    --secondary-color: #0366d6;
+    --background-color: #ffffff;
+    --text-color: #24292e;
+    --border-color: #e1e4e8;
+    --code-background: #f6f8fa;
+    --link-color: #0366d6;
+    --hover-color: #044289;
     --sidebar-width: 250px;
 }
 
@@ -33,7 +33,7 @@ body {
 .doc-nav {
     width: var(--sidebar-width);
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: #f6f8fa;
     border-right: 1px solid var(--border-color);
     position: fixed;
     height: 100vh;
@@ -67,7 +67,7 @@ body {
 }
 
 .nav-menu a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     color: var(--primary-color);
 }
 
@@ -132,9 +132,7 @@ body {
 }
 
 .menu-group ul a:hover {
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 /* Main Content */
@@ -146,9 +144,10 @@ body {
 }
 
 article {
-    background: rgba(255, 255, 255, 0.05);
+    background: #ffffff;
     padding: 2rem;
     border-radius: 8px;
+    border: 1px solid var(--border-color);
 }
 
 /* SDK Cards */
@@ -270,4 +269,40 @@ p {
     .sdk-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Code block styling */
+pre {
+    background-color: var(--code-background);
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    position: relative;
+}
+
+code {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+/* Copy button */
+.highlight {
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+    background: rgba(255, 255, 255, 0.2);
 } 

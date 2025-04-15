@@ -10,8 +10,14 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
-      line_numbers: true
-theme: jekyll-theme-minimal
+      line_numbers: false
+      css_class: 'highlight' # CSS class for the code block
+    span:
+      css_class: 'highlight'
+    guess_lang: true       # Auto-detect language
+    disable: false         # Disable highlighting completely
+
+theme: jekyll-theme-primer
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
