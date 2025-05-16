@@ -37,7 +37,7 @@ When you purchase a topic:
 ## Prerequisites
 
 * DPSN URL: **betanet.dpsn.org**
-* DPSN Smart Contract Address: **0xC4c4CFCB2EDDC26660850A4f422841645941E352** (on Base Sepolia testnet)
+* DPSN Smart Contract Address: **0x5dE897F4Cedf01d6c4eFD5e56A02278ddF93e54f** (on Base Sepolia testnet)
 * Wallet private key: Your private key from your EVM compatible wallet
 * BASE RPC URL: URL from any Base testnet RPC provider
 * Minimum balance: **0.002 Base Sepolia ETH to register a topic**
